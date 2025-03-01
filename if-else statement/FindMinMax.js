@@ -6,12 +6,8 @@ for (let index = 0; index < 5; index++) {
 }
 
 // Calculating the maximum and minimum values from the array
-var max = Number.MIN_VALUE;
-var min = Number.MAX_VALUE;
-randomValues.forEach((values) => {
-    max = Math.max(max, values);
-    min = Math.min(min, values);
-})
+var max = Math.max(...randomValues);
+var min = Math.min(...randomValues);
 
 
 console.log(randomValues);
