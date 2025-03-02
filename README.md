@@ -3,3 +3,4 @@ Learning javascript basics:-<br>
 <br>2.CONDITIONAL STATEMENTS
 <br>3.CONTROL FLOW STATEMENTS
 <br>4.SWITCH CASE
+<br>5.FUNCTION HANDLING
