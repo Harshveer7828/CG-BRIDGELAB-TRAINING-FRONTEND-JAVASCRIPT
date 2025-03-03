@@ -7,23 +7,24 @@ const generateThreeDigitNumber = () => {
 let randomArray = [];
 // Function to store random values in the array
 const storeRandomValuesInArray = () => {
-
+    let index = 0;
 
     for (let i = 0; i < 10; i++) {
-        randomArray[i] = generateThreeDigitNumber();
+        randomArray[index++] = generateThreeDigitNumber();
     }
     return randomArray;
 }
 
 // Function to find the second Largest  element
 const findSecondLargest = () => {
-    let largestValue = Number.MIN_VALUE;
+    let largestValue = 0;
     let secondLargest = largestValue;
     randomArray.forEach((value) => {
         if (largestValue < value) {
             secondLargest = largestValue;
             largestValue = value;
-
+        }else if(value > secondLargest && value != largestValue){
+            secondLargest = value;
         }
     })
     return secondLargest;
@@ -38,6 +39,8 @@ const findSecondSmallest = () => {
         if (smallestvalue > value) {
             secondSmallest = smallestvalue;
             smallestvalue = value;
+        }else if(value < secondSmallest && value != smallestvalue){
+            secondSmallest = value;
         }
     })
 
