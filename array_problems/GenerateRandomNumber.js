@@ -7,10 +7,10 @@ const generateThreeDigitNumber = () => {
 let randomArray = [];
 // Function to store random values in the array
 const storeRandomValuesInArray = () => {
-    let index = 0;
+
 
     for (let i = 0; i < 10; i++) {
-        randomArray[index++] = generateThreeDigitNumber();
+        randomArray[i] = generateThreeDigitNumber();
     }
     return randomArray;
 }
